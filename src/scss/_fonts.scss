@@ -23,3 +23,17 @@
       /* Modern Browsers */ url("../fonts/Montserrat-Black.woff2") format("woff2"); /* Modern Browsers */
    font-weight: 900;
 }
+@font-face {
+  font-family: "ProximaNova-Regular";
+
+  src: url("../fonts/12093.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/12093.woff2") format("woff2"); /* Modern Browsers */
+  font-weight:400;
+}
+@font-face {
+  font-family: "ProximaNova-Black";
+
+  src: url("../fonts/11094.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/11094.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 900;
+}

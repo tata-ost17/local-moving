@@ -1,0 +1,11 @@
+$orange: #ff7101;
+
+@mixin f900 {
+   font-family: 'Montserrat-Black', sans-serif;
+   font-weight: 900;
+}
+
+@mixin f300 {
+   font-family: 'Montserrat-Black', sans-serif;
+   font-weight: 300;
+}
