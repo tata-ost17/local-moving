@@ -1,17 +1,77 @@
-@import 'vars';
-@import 'fonts';
-@import 'global';
+@import "vars";
+@import "fonts";
+@import "global";
 //-----------------------------------------------------------------------------------------------------------
 //
 //                                                    START CODE
-//
+.header {
+   &__top {
+      min-height: 110px;
+      background-color: #1c3051;
+      border-bottom: 7px solid #ff7101;
+   }
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 0px 27px;      
+      height: 100%;
+   }
+   &__logo {
+      width: 218px;
+      height: 48px;
+      color: #fff;
+      padding-top: 8px;
+   }
+   &__text {
+      color: #b4c1d5;
+      font-family: "Montserrat-Regular";
+      font-size: 13px;
+      text-transform: uppercase;
+      line-height: 17px;
+      width: 108px;
+      border-left: 1px solid #3b5072;
+      padding: 5px 0 0 20px;
+   }
+   &__link {
+      li {
+         display: inline-block;        
+         a {
+            color: #fff;
+            font-size: 13.55px;
+            font-family: "Montserrat-Regular";
+            text-transform: uppercase;
+            padding: 4px 0 0 17px;
+            cursor: pointer;
+         }
+      }
+   }
+   &__phone {
+      font-family: "Montserrat-Black";
+      font-size: 21.94px;
+      color: #fff;
+      text-transform: uppercase;      
+      align-items: center;
+      position: relative;
+      &::before {
+         content: "";
+         background: url(../images/icons/icon-tel.png) left no-repeat;
+         padding: 6px 0 0 35px;
+         position: absolute;
+         width: 21px;
+         height: 25px;
+         left: -31px;
+      }
+      &::after {
+         content: "";
+         background: url(../images/icons/icon-arrow.png) right no-repeat;
+         padding: 0 0 0 24px;
+      }
+   }
+}
+
 //-----------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
 
 //-----------------------------------------------------------------------------------------------------------
 //
@@ -19,4 +79,4 @@
 //
 //-----------------------------------------------------------------------------------------------------------
 
-@import 'media';
+@import "media";

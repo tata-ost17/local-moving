@@ -12,6 +12,13 @@ html,
 body {
   height: 100%;
   position: relative;
+  margin: 0;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  
 }
 
 ul,
@@ -26,13 +33,28 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 button:focus,
 input:focus {
   outline: transparent;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
 }
