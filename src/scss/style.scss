@@ -5,6 +5,7 @@
 //
 //                                                    START CODE
 .header {
+   position: relative;
    &__top {
       min-height: 110px;
       background-color: #1c3051;
@@ -24,6 +25,7 @@
       height: 48px;
       color: #fff;
       padding-top: 8px;
+      margin-right: -70px;
    }
    &__text {
       color: #b4c1d5;
@@ -34,27 +36,38 @@
       width: 108px;
       border-left: 1px solid #3b5072;
       padding: 5px 0 0 20px;
+      margin-right: 20px;
    }
    &__link {
       li {
          display: inline-block;
          a {
             color: #fff;
-            font-size: 13.55px;
+            font-size: 14px;
             font-family: "Montserrat-Regular";
             text-transform: uppercase;
-            padding: 4px 0 0 17px;
             cursor: pointer;
+            &:hover {
+               transform: scale(1.1);
+               color: $orange;
+            }
+         }
+         & + li {
+            margin-left: 20px;
          }
       }
    }
    &__phone {
       font-family: "Montserrat-Black";
-      font-size: 21.94px;
+      font-size: 22px;
       color: #fff;
       text-transform: uppercase;
       align-items: center;
       position: relative;
+      &:hover {
+         transform: scale(1.1);
+         color: $orange;
+      }
       &::before {
          content: "";
          background: url(../images/icons/icon-tel.png) left no-repeat;
@@ -74,19 +87,19 @@
 .header-content {
    min-height: 610px;
    &__inner {
-      max-width: 651px;
+      max-width: 660px;
       padding-top: 93px;
       position: relative;
    }
    &__title {
-      font-size: 93px;
+      font-size: 94px;
       @include f900;
       color: #fff;
       margin-bottom: 42px;
       text-transform: uppercase;
    }
    &__subtitle {
-      font-size: 32.67px;
+      font-size: 33px;
       color: #1c3051;
       font-family: "ProximaNova-Black", sans-serif;
       text-transform: uppercase;
@@ -95,27 +108,21 @@
    &__btn {
       border-radius: 33px;
       color: #fff;
-      font-size: 19.73px;
+      font-size: 20px;
       background-color: $orange;
-      padding: 18px;
+      padding: 6px;
       @include f900;
       width: 266px;
       height: 66px;
       cursor: pointer;
-      padding-left: 60px;
-      &::before {
-         content: "";
-         background: url(../images/icons/icon-watch.png);
-         color: #fff;
-         width: 34px;
-         height: 34px;
-         border-radius: 50%;
-         right: 0;
+      text-align: center;
+      img{
+         align-items: center;
+         margin-right: 15px;
       }
    }
    &__img {
       position: absolute;
-      top: 0;
       margin-right: auto;
       width: 622px;
       left: 730px;
@@ -123,6 +130,69 @@
       z-index: 1;
    }
 }
+.header-send {
+   background-image: url(../images/content/base.jpg);
+   height: 308px;
 
-
+   &__inner {
+      position: relative;
+      padding-top: 70px;
+   }
+   &__img {
+      position: absolute;
+      top: -62px;
+      left: -60px;
+   }
+   &__form {
+      margin-left: 280px;
+   }
+   &__title {
+      font-family: "ProximaNova-Bold", sans-serif;
+      font-weight: 800;
+      font-size: 21px;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 30px;
+      margin-bottom: 5px;
+   }
+   &__subtitle {
+      font-family: "ProximaNova-Regular", sans-serif;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 30px;
+      margin-bottom: 50px;
+   }
+   input {
+      height: 64px;
+      width: 304px;
+      background-color: transparent;
+      border: 1px solid #fff;
+      border-radius: 33px;
+      margin-right: 20px;
+      color: #fff;
+      padding: 20px;
+      &::placeholder {
+         font-size: 14px;
+         color: #fff;
+         font-family: "Montserrat-Light", sans-serif;
+         padding: 20px;
+      }
+   }
+   button {
+      width: 196px;
+      height: 66px;
+      color: #000;
+      background-color: #fff;
+      border-radius: 33px;
+      border: transparent;
+      font-size: 14px;
+      color: #474747;
+      @include f900;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+         transform: scale(1.1);
+      }
+   }
+}
 @import "media";
