@@ -14,12 +14,12 @@ body {
   position: relative;
   margin: 0;
   font-family: "ProximaNova-Regular", sans-serif;
+  font-weight: 400;
 }
 .container{
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
-  
+  padding: 0 15px;  
 }
 
 ul,
@@ -58,4 +58,12 @@ input:focus {
 
 .footer {
   flex: 0 0 auto;
+}
+.title{
+  font-size: 33px;
+  font-family: "ProximaNova-Black", sans-serif;
+  color: $main;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  text-align: center;
 }
