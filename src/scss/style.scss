@@ -29,20 +29,21 @@
       height: 48px;
       color: #fff;
       padding-top: 8px;
-      margin-right: -70px;
+      margin-right: 20px;
    }
    &__text {
       color: #b4c1d5;
-      font-family: "Montserrat-Regular";
+      font-family: "Montserrat-Regular", sans-serif;
       font-size: 13px;
       text-transform: uppercase;
       line-height: 17px;
       width: 108px;
       border-left: 1px solid #3b5072;
       padding: 5px 0 0 20px;
-      margin-right: 20px;
+      margin-right: 80px;
    }
    &__link {
+      margin-right: auto;
       li {
          display: inline-block;
          a {
@@ -97,38 +98,39 @@
    }
    &__title {
       font-size: 94px;
-      @include f900;
+      @include m900;
       color: #fff;
-      margin-bottom: 42px;
+      margin-bottom: 20px;
       text-transform: uppercase;
    }
    &__subtitle {
       font-size: 33px;
       color: #1c3051;
-      font-family: "ProximaNova-Black", sans-serif;
+      @include p900;
       text-transform: uppercase;
-      margin-bottom: 60px;
+      margin-bottom: 50px;
    }
    &__btn {
       display: flex;
       border-radius: 33px;
       color: #fff;
       font-size: 20px;
+      text-transform: uppercase;
       background-color: $orange;
       padding: 16px;
-      @include f900;
+      @include m900;
       width: 266px;
       height: 66px;
       cursor: pointer;
-      align-items: center;    
-      img{
+      align-items: center;
+      img {
          align-items: center;
-         margin-right: 15px;         
+         margin-right: 15px;
          width: 35px;
          height: 35px;
       }
-       &:hover {
-         transform: scale(1.1);        
+      &:hover {
+         transform: scale(1.1);
       }
    }
    &__img {
@@ -197,7 +199,7 @@
       border: transparent;
       font-size: 14px;
       color: #474747;
-      @include f900;
+      @include m900;
       cursor: pointer;
       transition: all 0.3s ease;
       &:hover {
@@ -207,6 +209,7 @@
 }
 //start services
 .services {
+   margin-bottom: 120px;
    &__title {
       margin: 110px 0 95px;
    }
@@ -247,6 +250,134 @@
       text-transform: uppercase;
    }
 }
-
 //end services
+//start free-quote
+.free-quote {
+   min-height: 787px;
+   background-repeat: no-repeat;
+   background-size: contain;
+   z-index: 3;
+
+   .container {
+      position: relative;
+      &.free-quote__inner {
+         background-color: transparent;
+      }
+   }
+   &__wrapper {
+      display: flex;
+   }
+   &__content {
+      flex: 0 0 386px;
+      width: 100%;
+      padding-top: 90px;
+      margin-right: 90px;
+   }
+   &__content-title {
+      font-size: 21px;
+      color: #fff;
+      font-family: "ProximaNova-Bold", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      line-height: 30px;
+      margin-bottom: 65px;
+   }
+   &__content-text {
+      font-size: 16px;
+      line-height: 26px;
+      color: #fff;
+   }
+   // &__form {
+   //    width: 694px;
+   //    // background-color: $orange;
+   //    // min-height: 811px;
+   //    z-index: -1;
+   //    // position: absolute;
+   //    // top: -105px;
+   //    // right: 0;
+   // }
+   &__inner {
+      max-width: 700px;
+      padding-top: 100px;
+      min-height: 787px;
+      background-color: transparent;
+   }
+   &__form-title {
+      font-size: 33px;
+      color: #fff;
+      letter-spacing: -1px;
+      line-height: 33px;
+      @include p800;
+      text-transform: uppercase;
+      margin-bottom: 60px;
+   }
+
+   &__form-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      // padding: 0px 2px;
+      input,
+      textarea,
+      button,
+      .jq-selectbox {
+         background-color: transparent;
+         border: 1px solid #fff;
+         opacity: 0.4;
+         border-radius: 26px;
+         width: 340px;
+         height: 50px;
+         margin-bottom: 18px;
+         padding: 18px;
+         font-size: 14px;
+         color: #fff;
+         line-height: 30px;
+         &:nth-child(odd) {
+            margin-right: 15px;
+         }
+         &::placeholder {
+            color: #fff;
+            line-height: 30px;
+            opacity: 1;
+         }
+      }
+
+      .jq-selectbox {
+         width: 100%;
+      }
+      textarea {
+         resize: none;
+         height: 140px;
+         padding: 10px;
+         width: 100%;
+         margin-bottom: 30px;
+      }
+      label {
+         display: block;
+         font-size: 14px;
+         color: #fff;
+         margin-bottom: 15px;
+      }
+      button {
+         background-color: $orange;
+         @include m900;
+         font-size: 14px;
+         color: #fff;
+         text-transform: uppercase;
+         align-items: flex-start;
+         cursor: pointer;
+         padding: 1px 6px;
+         border-width: 0px;
+         border-style: none;
+         border-color: none;
+         opacity: 1;
+         margin-left: 15px;
+         &:nth-child(odd) {
+            margin-right: 0px;
+         }
+      }
+   }
+}
+
+//end free-quote
 @import "media";

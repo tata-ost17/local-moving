@@ -19,7 +19,7 @@ body {
 .container{
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;  
+  padding: 0 10px;  
 }
 
 ul,
@@ -61,7 +61,7 @@ input:focus {
 }
 .title{
   font-size: 33px;
-  font-family: "ProximaNova-Black", sans-serif;
+  @include p900;
   color: $main;
   letter-spacing: -1px;
   text-transform: uppercase;
