@@ -253,11 +253,10 @@
 //end services
 //start free-quote
 .free-quote {
-   min-height: 787px;
+   min-height: 785px;
    background-repeat: no-repeat;
    background-size: contain;
    z-index: 3;
-
    .container {
       position: relative;
       &.free-quote__inner {
@@ -322,8 +321,7 @@
       button,
       .jq-selectbox {
          background-color: transparent;
-         border: 1px solid #fff;
-         opacity: 0.4;
+         border: 1px solid #768090;
          border-radius: 26px;
          width: 340px;
          height: 50px;
@@ -338,13 +336,12 @@
          &::placeholder {
             color: #fff;
             line-height: 30px;
-            opacity: 1;
          }
       }
-
       .jq-selectbox {
          width: 100%;
       }
+      
       textarea {
          resize: none;
          height: 140px;
@@ -378,6 +375,74 @@
       }
    }
 }
-
 //end free-quote
+//start numbers
+.numbers {
+   padding: 125px 0 180px;
+   position: relative;
+   &__line {
+      border: 1px solid $orange;
+      width: 100%;
+      position: absolute;
+      top: 394px;
+      z-index: -1;
+   }
+   &__title {
+      margin-bottom: 95px;
+      &::after {
+         content: "";
+         height: 1px;
+         color: $orange;
+         width: 100vh;
+      }
+   }
+   &__inner {
+      display: flex;
+      flex: 1 0 25%;
+      justify-content: space-between;
+   }
+   &__item {
+      text-align: center;
+      padding: 0px 35px;
+      background-color: #fff;
+      & + .numbers__item {
+         margin-left: 120px;
+      }
+   }
+   &__item-icon {
+      align-items: center;
+      margin-bottom: 22px;
+      svg {
+         min-height: 74px;
+      }
+   }
+   &__item-num {
+      @include p900;
+      color: $orange;
+      font-size: 70px;
+      letter-spacing: -2px;
+      line-height: 72px;
+      margin-bottom: 40px;
+   }
+   &__item-text {
+      font-size: 19px;
+      letter-spacing: -1px;
+      color: $main;
+      text-transform: uppercase;
+   }
+}
+// .Line {
+//   border-width: 3px;
+//   border-color: rgb(255, 113, 1);
+//   border-style: solid;
+//   background-color: rgb(255, 228, 0);
+//   position: absolute;
+//   left: 0px;
+//   top: 2905px;
+//   width: 1914px;
+//   height: 0;
+//   z-index: 263;
+// }
+
+//end numbers
 @import "media";
