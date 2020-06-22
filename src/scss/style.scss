@@ -1,5 +1,5 @@
-@import "vars";
 @import "fonts";
+@import "vars";
 @import "global";
 //-----------------------------------------------------------------------------------------------------------
 //
@@ -255,7 +255,7 @@
 .free-quote {
    min-height: 785px;
    background-repeat: no-repeat;
-   background-size: contain;
+   background-size: cover;
    z-index: 3;
    .container {
       position: relative;
@@ -315,11 +315,9 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      // padding: 0px 2px;
       input,
       textarea,
-      button,
-      .jq-selectbox {
+      button {
          background-color: transparent;
          border: 1px solid #768090;
          border-radius: 26px;
@@ -338,43 +336,81 @@
             line-height: 30px;
          }
       }
-      .jq-selectbox {
-         width: 100%;
-      }
-      
-      textarea {
-         resize: none;
-         height: 140px;
-         padding: 10px;
-         width: 100%;
-         margin-bottom: 30px;
-      }
-      label {
-         display: block;
-         font-size: 14px;
+
+      .jq-selectbox__select {
+         height: 50px;
+         border: 1px solid #768090;
+         border-bottom-color: #768090;
+         border-radius: 26px;
+         background: transparent;
+         box-shadow: none;
          color: #fff;
-         margin-bottom: 15px;
+         text-shadow: none;
+         width: 700px;
+         padding: 10px 18px;
+         margin-bottom: 18px;
       }
-      button {
-         background-color: $orange;
-         @include m900;
-         font-size: 14px;
+      .jq-selectbox__trigger-arrow {
+         position: absolute;
+         top: 22px;
+         right: 5px;
+         width: 0;
+         height: 0;
+         border-top: 5px solid #fff;
+         border-right: 5px solid transparent;
+         border-left: 5px solid transparent;
          color: #fff;
-         text-transform: uppercase;
-         align-items: flex-start;
-         cursor: pointer;
-         padding: 1px 6px;
-         border-width: 0px;
-         border-style: none;
-         border-color: none;
-         opacity: 1;
-         margin-left: 15px;
-         &:nth-child(odd) {
-            margin-right: 0px;
-         }
+      }
+      .jq-selectbox__trigger {
+         border-left: none;
+         right: 15px;
+      }
+      .jq-selectbox__dropdown {
+         box-sizing: border-box;
+         width: 700px;
+         margin: 2px 0 0;
+         padding: 10px 18px;
+         border: 1px solid #768090;
+         border-radius: 26px;
+         background: transparent;
+         box-shadow: none;
+         font: 14px "ProximaNova-Bold", sans-serif;
+         color: #fff;
+      }
+   }
+   textarea {
+      resize: none;
+      height: 140px;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 30px;
+   }
+   label {
+      display: block;
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 15px;
+   }
+   button {
+      background-color: $orange;
+      @include m900;
+      font-size: 14px;
+      color: #fff;
+      text-transform: uppercase;
+      align-items: flex-start;
+      cursor: pointer;
+      padding: 1px 6px;
+      border-width: 0px;
+      border-style: none;
+      border-color: none;
+      opacity: 1;
+      margin-left: 15px;
+      &:nth-child(odd) {
+         margin-right: 0px;
       }
    }
 }
+
 //end free-quote
 //start numbers
 .numbers {
@@ -445,4 +481,100 @@
 // }
 
 //end numbers
+//start timer
+.timer {
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   min-height: 720px;
+   opacity: 0.9;
+   padding: 105px 0px 85px;
+   &__title {
+      color: #fff;
+      line-height: 40px;
+   }
+}
+//end timer
+//start bonus
+.bonus {
+   padding: 95px 0px 125px;
+   text-align: center;
+   &__title {
+      margin-bottom: 75px;
+   }
+   &__items {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 33px;
+   }
+   &__item {
+      text-align: center;
+      position: relative;
+      img {
+         background-size: contain;
+         overflow: hidden;
+         background-position: center;
+         width: 275px;
+         height: 310px;
+         margin-top: 25px;
+      }
+      span {
+         display: inline-block;
+         width: 146px;
+         position: absolute;
+         top: 165px;
+         padding-bottom: 17px;
+         padding-left: 30px;
+         &::after {
+            content: "";
+            position: absolute;
+            background-image: url(../images/content/arrow-right.png);
+            width: 133px;
+            height: 20px;
+            top: 50px;
+            left: 20px;
+         }
+         &.bonus__text-up {
+            top: 145px;
+            &::after {
+               content: "";
+               position: absolute;
+               top: 70px;
+            }
+         }
+      }
+   }
+   &__text-1,
+   &__text-2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $main;
+      max-width: 150px;
+      text-align: center;
+      margin: 0 auto;
+   }
+   &__text-2 {
+      color: $orange;
+   }
+   &__text-1 {
+      margin-bottom: 85px;
+      position: relative;
+      &::after {
+         content: "";
+         position: absolute;
+         background-image: url(../images/content/arrow-left.png);
+         width: 748px;
+         height: 99px;
+         top: 80px;
+         left: -300px;
+      }
+   }
+   p {
+      font-size: 22px;
+      color: $orange;
+      margin: 0 auto;
+      max-width: 790px;
+   }
+}
+//end bonus
 @import "media";

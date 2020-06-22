@@ -95,6 +95,9 @@ gulp.task("style", function () {
 			"node_modules/normalize.css/normalize.css",
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.css",
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css",
+			"node_modules/flipclock/dist/flipclock.css",
+			"node_modules/animate.css/animate.css",
+			
 		])
 		.pipe(sourcemaps.init())
 		.pipe(concat("libs.min.css")) //склеиваем их в один файл с указанным именем
@@ -111,6 +114,7 @@ gulp.task("script", function () {
 			//тут подключаем разные js в общую библиотеку. Отключите то, что вам не нужно.
 			"node_modules/jquery/dist/jquery.js",
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.js",
+			"node_modules/flipclock/dist/flipclock.js",
 		])
 		.pipe(size())
 		.pipe(sourcemaps.init())
