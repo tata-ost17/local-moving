@@ -3,6 +3,12 @@ $(function () {
 
    $('input[type="file"],input[type="checkbox"],input[type="radio"],select').styler();
 
+   $('.questions__box-icon').on('click', function () {
+      $(this).toggleClass('active')
+   });
+
+   new WOW().init();
+
    $(document).ready(function () {
       var clock;
       clock = $('.clock').FlipClock({
