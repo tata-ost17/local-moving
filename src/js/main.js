@@ -7,6 +7,17 @@ $(function () {
       $(this).toggleClass('active')
    });
 
+   $('.feedback__slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      infinite: true,
+      dots: true,
+      centerMode: false,
+      prevArrow: '<img class="slider-arrows slider-arrows__left" src="images/icons/arrow-left.png" alt="">',
+      nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/icons/arrow-right.png" alt=""></img>',
+      
+   });
+
    new WOW().init();
 
    $(document).ready(function () {

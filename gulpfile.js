@@ -97,6 +97,7 @@ gulp.task("style", function () {
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css",
 			"node_modules/flipclock/dist/flipclock.css",
 			"node_modules/animate.css/animate.css",
+			"node_modules/slick-carousel/slick/slick.css",
 			
 		])
 		.pipe(sourcemaps.init())
@@ -115,6 +116,7 @@ gulp.task("script", function () {
 			"node_modules/jquery/dist/jquery.js",
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.js",
 			"node_modules/flipclock/dist/flipclock.js",
+			"node_modules/slick-carousel/slick/slick.js",
 		])
 		.pipe(size())
 		.pipe(sourcemaps.init())

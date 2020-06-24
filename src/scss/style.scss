@@ -808,10 +808,110 @@
       text-transform: uppercase;
       border-radius: 23px;
       border: none;
+      color: $main;
       &:hover {
          transform: scale(1.1);
       }
    }
 }
 //end your-question
+//start feedback
+.feedback {
+   padding: 90px 0 510px;
+   position: relative;
+   &__title {
+      line-height: 40px;
+      margin-bottom: 75px;
+   }
+   &__slider {
+      margin: 0 -12px;
+      padding: 0 55px;
+      position: relative;
+      z-index: 1;
+   }
+   &__slider-item {
+      display: flex !important;
+      justify-content: space-between;
+      padding: 0 12px;
+   }
+
+   &__slider-img {
+      width: 105px;
+      height: 105px;
+   }
+   &__slider-content {
+      padding: 20px;
+   }
+   &__slider-title {
+      font-size: 15px;
+      color: $orange;
+      @include m900;
+      text-transform: uppercase;
+      margin-bottom: 23px;
+      padding-left: 50px;
+      position: relative;
+      padding-top: 7px;
+      &::before {
+         content: "";
+         position: absolute;
+         background: url(../images/icons/ico.png) left no-repeat;
+         background-size: contain;
+         left: 0;
+         top: 0;
+         width: 32px;
+         height: 32px;
+      }
+   }
+   &__slider-text {
+      font-size: 13px;
+      color: $main;
+      @include m300;
+      line-height: 28px;
+   }
+   &__image{
+      position: absolute;
+      bottom: 0;
+      left: 255px;
+   }
+}
+.slider-arrows {
+   width: 13px;
+   height: 20px;
+   z-index: 3;
+}
+.slider-arrows__left {
+   position: absolute;
+   left: 10px;
+   top: 45px;
+}
+.slider-arrows__right {
+   position: absolute;
+   right: 10px;
+   top: 45px;
+}
+.slick-dots {
+   text-align: center;
+   li {
+      display: inline-block;
+      & + li {
+         margin-left: 20px;
+      }
+      &.slick-active {
+         button {
+            background-color: $main;
+         }
+      }
+      button {
+         outline: none;
+         width: 9px;
+         height: 12px;
+         background-color: $orange;
+         font-size: 0;
+         border-radius: 50%;
+         border: none;
+         cursor: pointer;
+      }
+   }
+}
+//end feedback
 @import "media";
