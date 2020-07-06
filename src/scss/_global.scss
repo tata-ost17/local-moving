@@ -12,6 +12,16 @@ html,
 body {
   height: 100%;
   position: relative;
+  margin: 0;
+  font-family: "ProximaNova-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 ul,
@@ -26,13 +36,44 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 button:focus,
 input:focus {
   outline: transparent;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+.title {
+  font-size: 33px;
+  @include p900;
+  color: $main;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.content-title {
+  font-size: 21px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 30px;
+}
+

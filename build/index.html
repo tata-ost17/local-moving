@@ -1,26 +1,794 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>webcase</title>
+</head>
 
 <body>
-  <header>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__inner">
+              <a class="header__logo" href="#">
+                <img src="images/content/logo.png" alt="">
+              </a>
+              <div class="header__text">
+                Newark
+                New Jersey
+                USA
+              </div>
+              <div class="header__btn">
+                <div class="header__btn-line"></div>
+                <div class="header__btn-line"></div>
+                <div class="header__btn-line"></div>
+              </div>
+              <ul class="header__link">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Promotionf</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">About us</a></li>
+              </ul>
+              <a class="header__phone" href="tel:3337773333">(333) 777-3333</a>
+            </div>
+          </div>
+        </div>
+        <div class="header-content" style="background-image: url(images/content/header-bg.jpg)">
+          <div class="container">
+            <div class="header-content__inner">
+              <div class="header-content__title animate__animated animate__fadeInLeft animate__delay-.5s">Moving<br>
+                New Jersey</div>
+              <div class="header-content__subtitle animate__animated animate__fadeInLeft animate__delay-1s">We are
+                professionals in their field</div>
+              <a class="header-content__btn animate__animated animate__headShake animate__delay-2s" href="#">
+                <img src="images/icons/icon-watch.png" alt="">
+                watch videos
+              </a>
+              <div class="header-content__img animate__animated animate__fadeInRight animate__delay-1.5s">
+                <img src="images/content/man.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-send">
+          <div class="container">
+            <div class="header-send__inner">
+              <img class="header-send__img" src="images/content/woman.png" alt="">
+              <div class="header-send__form">
+                <div class="header-send__title">Do you need a consultation?</div>
+                <div class="header-send__subtitle">Complete the form and our manager will contact you during the day.
+                </div>
+                <form>
+                  <input type="text" placeholder="Name ..." required />
+                  <input type="text" placeholder="Phone ..." required />
+                  <button type="submit">SEND</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="services">
+        <div class="container">
+          <div class="services__title title">services</div>
 
-</header>
-  <!-- WRITE CODE HERE -->
+          <div class="services__wrapper">
+            <div class="services__subtitle">Local moving</div>
+            <div class="services__subsubtitle">Long distance moving</div>
+            <div class="services__item">
+              <img class="services__img" src="images/content/packing.jpg" alt="packing">
+              <div class="services__name">Packing</div>
+            </div>
+            <div class="services__item">
+              <img class="services__img" src="images/content/unpacking.jpg" alt="unpacking">
+              <div class="services__name">Unpacking</div>
+            </div>
+            <div class="services__item">
+              <img class="services__img" src="images/content/labor-jobs.jpg" alt="labor-jobs">
+              <div class="services__name">Labor Jobs</div>
+            </div>
+            <div class="services__item">
+              <img class="services__img" src="images/content/hauling.jpg" alt="hauling">
+              <div class="services__name">Hauling</div>
+            </div>
+            <div class="services__item">
+              <img class="services__img" src="images/content/delivery-service.jpg" alt="delivery-service">
+              <div class="services__name">Delivery Service</div>
+            </div>
+            <div class="services__item">
+              <img class="services__img" src="images/content/commercial-moving.jpg" alt="commercial-moving">
+              <div class="services__name">Commercial Moving</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="free-quote" style="background-image: url(images/content/content-bg.jpg)">
+        <div class="container">
+          <div class="free-quote__wrapper">
+            <div class="free-quote__content">
+              <div class="free-quote__content-title content-title">Why customers again and again
+                chosen our company services?</div>
+              <p class="free-quote__content-text">Why customers again and again chosen our company services?Why
+                customers
+                again and again chosen our company services?Why
+                customers again and again chosen our company services?Why customers again and again chosen our company
+                services?Why
+                customers again and again chosen our company services?Why customers again and again chosen our company
+                services?Why
+                customers again and again chosen our company services?Why customers again and again chosen our company
+                services?</p>
+            </div>
 
+            <div class="free-quote__inner">
+              <div class="free-quote__form-title">Get a free quote</div>
+              <div class="free-quote__form-content">
+                <form>
+                  <input type="text" placeholder="Full name" required>
+                  <input type="text" placeholder="Email" required>
+                  <input type="tel" placeholder="Phone" required>
+                  <input type="text" placeholder="Date" required>
+                  <input type="text" placeholder="Zip from" required>
+                  <input type="text" placeholder="Zip to" required>
+                  <select>
+                    <option selected value="Choise moving size">Choise moving size</option>
+                    <option value="Choise moving size">Choise moving size</option>
+                  </select>
+                  <textarea name=""></textarea>
+                  <label>How did you hear about us</label>
+                  <input type="text" required>
+                  <button type="submit">GET QUICK QUOTE</button>
+                </form>
+              </div>
 
-  <!-- STOP WRITE CODE -->
-  <footer>
-  
-</footer>
-  <script src="js/libs.min.js"></script>
-<script src="js/main.min.js"></script>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="numbers">
+        <div class="numbers__line"></div>
+        <div class="container">
+          <div class="numbers__title title">Few of us in numbers</div>
+          <div class="numbers__inner">
+            <div class="numbers__item">
+              <div class="numbers__item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74px"
+                  height="72px">
+                  <path fill-rule="evenodd" fill="rgb(255, 113, 1)"
+                    d="M73.722,35.589 L65.588,26.080 L73.722,16.571 C73.948,16.307 74.043,15.956 73.982,15.613 C73.921,15.270 73.709,14.974 73.405,14.805 L47.071,0.146 C46.623,-0.104 46.063,-0.027 45.696,0.336 L37.697,8.282 L29.772,0.340 C29.401,-0.031 28.828,-0.107 28.375,0.156 L0.577,16.282 C0.253,16.469 0.040,16.803 0.005,17.178 C-0.029,17.552 0.120,17.919 0.405,18.163 L9.824,26.253 L1.695,37.113 C1.494,37.380 1.420,37.722 1.490,38.049 C1.559,38.377 1.766,38.657 2.059,38.820 L10.157,43.328 C10.123,43.439 10.088,43.550 10.088,43.672 L10.088,54.390 C10.088,55.805 10.848,57.126 12.073,57.837 L35.603,71.449 C36.236,71.814 36.945,71.997 37.655,71.997 C37.662,71.997 37.669,71.996 37.676,71.996 C37.682,71.996 37.687,72.000 37.694,72.000 C37.706,72.000 37.716,71.993 37.728,71.993 C38.414,71.981 39.097,71.802 39.709,71.449 L63.166,57.878 C64.434,57.143 65.222,55.774 65.222,54.308 L65.222,42.367 L73.447,37.331 C73.736,37.153 73.934,36.858 73.986,36.523 C74.039,36.188 73.943,35.845 73.722,35.589 ZM36.537,38.750 L13.693,26.033 L36.537,12.044 L36.537,38.750 ZM38.850,11.997 L61.771,26.033 L38.850,38.793 L38.850,11.997 ZM46.708,2.594 L71.044,16.141 L63.830,24.577 L39.547,9.708 L46.708,2.594 ZM28.764,2.607 L35.876,9.733 L11.512,24.652 L3.147,17.469 L28.764,2.607 ZM11.718,27.583 L35.962,41.080 L28.630,50.962 L4.341,37.439 L11.718,27.583 ZM13.231,55.832 C12.719,55.534 12.401,54.982 12.401,54.390 L12.401,44.578 L28.393,53.480 C28.570,53.579 28.762,53.626 28.953,53.626 C29.309,53.626 29.657,53.462 29.882,53.159 L36.537,44.189 L36.537,69.314 L13.231,55.832 ZM62.910,54.308 C62.910,54.950 62.564,55.550 62.009,55.872 L38.850,69.271 L38.850,44.164 L45.585,53.162 C45.811,53.464 46.158,53.626 46.511,53.626 C46.717,53.626 46.926,53.571 47.113,53.456 L62.910,43.784 L62.910,54.308 ZM46.805,50.930 L39.452,41.108 L63.803,27.551 L71.083,36.063 L46.805,50.930 Z" />
+                </svg>
+              </div>
+              <div class="numbers__item-num">12</div>
+              <div class="numbers__item-text">Years
+                in business</div>
+            </div>
+            <div class="numbers__item">
+              <div class="numbers__item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82px"
+                  height="50px">
+                  <path fill-rule="evenodd" fill="rgb(255, 113, 1)"
+                    d="M79.255,41.638 L73.406,41.638 C72.756,46.353 68.639,50.000 63.669,50.000 C58.700,50.000 54.583,46.353 53.932,41.638 L33.735,41.638 C33.084,46.353 28.967,50.000 23.998,50.000 C19.029,50.000 14.911,46.353 14.261,41.638 L4.162,41.638 C1.867,41.638 -0.000,39.801 -0.000,37.543 L-0.000,4.094 C-0.000,1.836 1.867,-0.000 4.162,-0.000 L46.667,-0.000 C48.962,-0.000 50.829,1.836 50.829,4.094 L50.829,30.662 L53.840,30.662 L53.840,6.881 C53.840,5.392 55.072,4.181 56.585,4.181 L66.082,4.181 C68.560,4.181 70.876,5.489 72.125,7.595 L79.630,20.252 C80.254,21.304 80.583,22.502 80.583,23.719 L80.583,33.788 C81.427,34.249 82.000,35.134 82.000,36.149 L82.000,38.937 C82.000,40.426 80.768,41.638 79.255,41.638 ZM16.825,40.336 C16.828,44.224 20.044,47.387 23.998,47.387 C27.953,47.387 31.171,44.222 31.171,40.331 C31.171,36.440 27.953,33.275 23.998,33.275 C20.044,33.275 16.828,36.438 16.825,40.326 C16.825,40.328 16.825,40.329 16.825,40.331 C16.825,40.332 16.825,40.334 16.825,40.336 ZM2.656,33.449 L4.162,33.449 C4.992,33.449 5.667,32.785 5.667,31.968 L5.667,27.700 L2.656,27.700 L2.656,33.449 ZM48.173,4.094 C48.173,3.277 47.497,2.613 46.667,2.613 L4.162,2.613 C3.332,2.613 2.656,3.277 2.656,4.094 L2.656,25.087 L6.996,25.087 C7.729,25.087 8.324,25.672 8.324,26.394 L8.324,31.968 C8.324,34.226 6.457,36.062 4.162,36.062 L2.656,36.062 L2.656,37.543 C2.656,38.360 3.332,39.024 4.162,39.024 L14.261,39.024 C14.911,34.309 19.029,30.662 23.998,30.662 C28.967,30.662 33.084,34.309 33.735,39.024 L48.173,39.024 L48.173,4.094 ZM53.840,33.275 L50.829,33.275 L50.829,39.024 L53.840,39.024 L53.840,33.275 ZM63.670,47.387 C67.625,47.387 70.842,44.222 70.842,40.331 C70.842,36.440 67.625,33.275 63.670,33.275 C59.714,33.275 56.497,36.440 56.497,40.331 C56.497,44.222 59.714,47.387 63.670,47.387 ZM69.830,8.911 C69.055,7.606 67.619,6.794 66.082,6.794 L56.585,6.794 C56.536,6.794 56.497,6.833 56.497,6.881 L56.497,9.756 L70.330,9.756 L69.830,8.911 ZM77.927,23.719 C77.927,22.965 77.722,22.221 77.335,21.569 L71.880,12.369 L56.497,12.369 L56.497,20.906 L67.576,20.906 C69.066,20.906 70.468,21.476 71.521,22.513 L73.282,24.245 C73.834,24.788 74.567,25.087 75.348,25.087 L77.927,25.087 L77.927,23.719 ZM77.927,27.700 L75.348,27.700 C73.858,27.700 72.457,27.130 71.403,26.093 L69.643,24.361 C69.091,23.818 68.357,23.519 67.576,23.519 L56.497,23.519 L56.497,33.730 C58.291,31.844 60.842,30.662 63.670,30.662 C68.639,30.662 72.756,34.309 73.407,39.024 L73.676,39.024 L73.676,36.149 C73.676,34.661 74.907,33.449 76.421,33.449 L77.927,33.449 L77.927,27.700 ZM79.343,36.149 C79.343,36.101 79.304,36.062 79.255,36.062 L76.421,36.062 C76.372,36.062 76.333,36.101 76.333,36.149 L76.333,39.024 L79.255,39.024 C79.304,39.024 79.343,38.985 79.343,38.937 L79.343,36.149 ZM63.670,36.236 C65.964,36.236 67.831,38.074 67.831,40.331 C67.831,42.589 65.964,44.425 63.670,44.425 C61.375,44.425 59.508,42.589 59.508,40.331 C59.508,38.074 61.375,36.236 63.670,36.236 ZM63.670,41.812 C64.500,41.812 65.175,41.147 65.175,40.331 C65.175,39.514 64.500,38.850 63.670,38.850 C62.839,38.850 62.164,39.514 62.164,40.331 C62.164,41.147 62.839,41.812 63.670,41.812 ZM32.976,23.136 C32.458,22.626 32.458,21.799 32.976,21.288 L37.793,16.550 L9.829,16.550 C9.096,16.550 8.501,15.965 8.501,15.243 C8.501,14.522 9.096,13.937 9.829,13.937 L37.793,13.937 L32.977,9.199 C32.458,8.688 32.458,7.861 32.977,7.351 C33.495,6.841 34.336,6.841 34.855,7.351 L41.939,14.320 C41.982,14.362 42.020,14.407 42.056,14.453 C42.065,14.464 42.072,14.475 42.080,14.486 C42.150,14.581 42.205,14.684 42.245,14.791 C42.249,14.802 42.253,14.812 42.256,14.823 C42.275,14.877 42.291,14.930 42.302,14.986 C42.302,14.987 42.303,14.988 42.303,14.989 C42.314,15.045 42.320,15.101 42.324,15.158 C42.325,15.171 42.326,15.184 42.326,15.198 C42.328,15.254 42.328,15.310 42.322,15.365 C42.322,15.366 42.322,15.367 42.322,15.368 C42.317,15.425 42.306,15.482 42.293,15.539 C42.290,15.550 42.287,15.562 42.284,15.574 C42.269,15.631 42.251,15.688 42.227,15.743 C42.227,15.743 42.227,15.743 42.227,15.744 C42.227,15.744 42.226,15.745 42.226,15.746 C42.204,15.799 42.176,15.850 42.146,15.901 C42.140,15.911 42.134,15.921 42.128,15.931 C42.097,15.980 42.064,16.027 42.026,16.073 C42.022,16.077 42.018,16.082 42.013,16.086 C41.990,16.114 41.966,16.141 41.939,16.168 L34.855,23.136 C34.596,23.392 34.256,23.519 33.916,23.519 C33.576,23.519 33.236,23.391 32.976,23.136 ZM23.998,36.236 C26.293,36.236 28.160,38.074 28.160,40.331 C28.160,42.589 26.293,44.425 23.998,44.425 C21.703,44.425 19.836,42.589 19.836,40.331 C19.836,38.074 21.703,36.236 23.998,36.236 ZM23.998,41.812 C24.828,41.812 25.503,41.147 25.503,40.331 C25.503,39.514 24.828,38.850 23.998,38.850 C23.168,38.850 22.492,39.514 22.492,40.331 C22.492,41.147 23.168,41.812 23.998,41.812 Z" />
+                </svg>
+              </div>
+              <div class="numbers__item-num">1356</div>
+              <div class="numbers__item-text">Cargo
+                transportation</div>
+            </div>
+            <div class="numbers__item">
+              <div class="numbers__item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77px"
+                  height="64px">
+                  <path fill-rule="evenodd" fill="rgb(255, 113, 1)"
+                    d="M74.096,53.115 L69.842,53.115 C69.218,53.115 68.712,52.606 68.712,51.980 C68.712,51.353 69.218,50.845 69.842,50.845 L74.096,50.845 C74.464,50.845 74.740,50.620 74.740,50.420 L74.740,47.386 C74.740,45.682 73.701,43.665 71.714,43.070 L65.563,42.143 C65.536,42.139 65.510,42.133 65.485,42.127 C65.473,42.125 65.462,42.123 65.450,42.120 C65.408,42.110 65.367,42.096 65.327,42.081 C65.318,42.077 65.308,42.073 65.299,42.069 C65.266,42.055 65.234,42.040 65.203,42.023 C65.198,42.021 65.192,42.019 65.187,42.016 C65.177,42.011 65.168,42.005 65.158,41.999 C65.150,41.994 65.141,41.989 65.133,41.984 C63.764,41.200 63.290,39.779 63.127,38.391 C61.626,39.285 59.904,39.796 58.072,39.796 C56.535,39.796 55.053,39.445 53.668,38.753 C53.109,38.474 52.881,37.793 53.159,37.231 C53.437,36.670 54.115,36.441 54.675,36.720 C55.744,37.254 56.887,37.526 58.072,37.526 C62.610,37.526 66.301,33.467 66.301,28.479 L66.301,23.637 C66.301,22.536 65.409,21.639 64.312,21.639 L61.404,21.639 C60.780,21.639 60.274,21.131 60.274,20.504 C60.274,19.877 60.780,19.369 61.404,19.369 L64.311,19.369 C66.655,19.369 68.561,21.284 68.561,23.637 L68.561,24.232 C68.660,23.832 68.712,23.418 68.712,22.996 L68.712,16.872 C68.712,14.828 67.056,13.165 65.020,13.165 L61.404,13.165 C60.780,13.165 60.274,12.657 60.274,12.030 C60.274,11.403 60.780,10.895 61.404,10.895 L65.020,10.895 C68.302,10.895 70.972,13.577 70.972,16.872 L70.972,22.994 C70.972,25.098 70.099,27.067 68.561,28.470 L68.561,28.479 C68.561,31.697 67.308,34.603 65.302,36.666 C65.314,38.109 65.425,39.403 66.135,39.934 L72.124,40.837 C72.170,40.844 72.216,40.854 72.261,40.866 C75.372,41.741 77.000,44.808 77.000,47.386 L77.000,50.420 C77.000,51.906 75.697,53.115 74.096,53.115 ZM54.096,26.557 C54.096,31.344 52.244,35.671 49.274,38.745 C49.277,41.399 49.420,43.850 50.941,44.837 L60.345,46.254 C60.391,46.261 60.437,46.271 60.482,46.284 C62.550,46.866 64.310,48.154 65.571,50.009 C66.722,51.702 67.356,53.746 67.356,55.765 L67.356,60.454 C67.356,62.409 65.619,64.000 63.484,64.000 L13.515,64.000 C11.381,64.000 9.644,62.409 9.644,60.454 L9.644,55.765 C9.644,53.746 10.278,51.702 11.429,50.009 C12.690,48.154 14.450,46.866 16.518,46.284 C16.563,46.271 16.609,46.261 16.655,46.254 L26.059,44.837 C27.579,43.849 27.723,41.399 27.726,38.745 C24.756,35.671 22.904,31.344 22.904,26.557 L22.904,26.170 C20.599,24.114 19.288,21.198 19.288,18.083 L19.288,12.030 C19.288,7.742 22.505,4.194 26.642,3.692 C27.128,1.579 29.018,-0.000 31.267,-0.000 L46.938,-0.000 C52.879,-0.000 57.712,4.854 57.712,10.820 L57.712,18.083 C57.712,21.198 56.401,24.114 54.096,26.170 L54.096,26.557 ZM25.590,47.203 L17.063,48.488 C13.676,49.478 11.904,52.888 11.904,55.765 L11.904,60.454 C11.904,61.146 12.642,61.730 13.515,61.730 L63.485,61.730 C64.358,61.730 65.096,61.146 65.096,60.454 L65.096,55.765 C65.096,52.888 63.324,49.478 59.937,48.488 L51.410,47.203 C50.146,52.718 44.803,56.747 38.500,56.747 C32.197,56.747 26.854,52.718 25.590,47.203 ZM49.265,46.415 C47.587,45.030 47.160,42.731 47.051,40.660 C44.594,42.410 41.655,43.430 38.500,43.430 C35.345,43.430 32.406,42.410 29.949,40.660 C29.840,42.731 29.413,45.030 27.735,46.415 C28.642,51.052 33.150,54.477 38.500,54.477 C43.850,54.477 48.357,51.052 49.265,46.415 ZM55.452,18.083 L55.452,10.819 C55.452,6.105 51.633,2.269 46.938,2.269 L31.267,2.269 C29.896,2.269 28.781,3.390 28.781,4.767 C28.781,5.393 28.275,5.902 27.651,5.902 C24.286,5.902 21.548,8.651 21.548,12.030 L21.548,18.083 C21.548,19.754 22.027,21.352 22.904,22.714 L22.904,19.294 C22.904,15.998 25.574,13.316 28.856,13.316 L49.349,13.316 C49.973,13.316 50.479,13.824 50.479,14.451 C50.479,15.078 49.973,15.586 49.349,15.586 L28.856,15.586 C26.821,15.586 25.164,17.249 25.164,19.294 L25.164,25.547 C25.170,25.616 25.171,25.685 25.164,25.754 L25.164,26.557 C25.164,34.609 31.147,41.160 38.500,41.160 C45.853,41.160 51.836,34.609 51.836,26.557 L51.836,18.083 C51.836,17.456 52.342,16.948 52.966,16.948 C53.590,16.948 54.096,17.456 54.096,18.083 L54.096,22.714 C54.972,21.351 55.452,19.754 55.452,18.083 ZM18.928,37.526 C20.113,37.526 21.256,37.255 22.326,36.720 C22.885,36.442 23.563,36.670 23.841,37.231 C24.119,37.793 23.891,38.474 23.332,38.753 C21.947,39.445 20.465,39.796 18.928,39.796 C17.096,39.796 15.374,39.286 13.873,38.391 C13.710,39.779 13.236,41.200 11.867,41.984 C11.859,41.989 11.850,41.994 11.842,41.999 C11.832,42.005 11.823,42.011 11.813,42.016 C11.808,42.019 11.802,42.021 11.797,42.023 C11.766,42.040 11.734,42.055 11.701,42.069 C11.692,42.073 11.682,42.077 11.673,42.081 C11.633,42.096 11.592,42.110 11.550,42.120 C11.538,42.124 11.527,42.125 11.516,42.127 C11.490,42.133 11.464,42.139 11.437,42.143 L5.285,43.070 C3.299,43.665 2.260,45.682 2.260,47.386 L2.260,50.420 C2.260,50.621 2.536,50.845 2.904,50.845 L7.157,50.845 C7.782,50.845 8.288,51.353 8.288,51.980 C8.288,52.606 7.782,53.115 7.157,53.115 L2.904,53.115 C1.303,53.115 -0.000,51.906 -0.000,50.420 L-0.000,47.386 C-0.000,44.808 1.628,41.741 4.739,40.866 C4.784,40.854 4.830,40.844 4.876,40.837 L10.865,39.934 C11.575,39.403 11.685,38.109 11.698,36.666 C9.692,34.603 8.438,31.697 8.438,28.479 L8.438,28.470 C6.901,27.067 6.027,25.098 6.027,22.996 L6.027,19.080 C6.027,16.193 8.125,13.790 10.869,13.326 C11.315,11.918 12.629,10.895 14.177,10.895 L15.596,10.895 C16.220,10.895 16.726,11.403 16.726,12.030 C16.726,12.657 16.220,13.165 15.596,13.165 L14.177,13.165 C13.510,13.165 12.967,13.710 12.967,14.380 C12.967,15.007 12.461,15.515 11.837,15.515 C9.880,15.515 8.288,17.114 8.288,19.080 L8.288,22.996 C8.288,23.418 8.340,23.832 8.438,24.232 L8.438,23.637 C8.438,21.284 10.345,19.370 12.688,19.370 L15.596,19.370 C16.220,19.370 16.726,19.878 16.726,20.504 C16.726,21.131 16.220,21.639 15.596,21.639 L12.688,21.639 C11.591,21.639 10.699,22.536 10.699,23.637 L10.699,28.479 C10.699,33.467 14.390,37.526 18.928,37.526 Z" />
+                </svg>
+              </div>
+              <div class="numbers__item-num">235</div>
+              <div class="numbers__item-text">Constant
+                clients</div>
+            </div>
+            <div class="numbers__item">
+              <div class="numbers__item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63px"
+                  height="63px">
+                  <path fill-rule="evenodd" fill="rgb(255, 113, 1)"
+                    d="M18.693,47.634 C17.087,47.634 15.780,46.327 15.780,44.719 L15.780,32.819 C15.780,31.211 17.087,29.903 18.693,29.903 L22.285,29.903 C23.891,29.903 25.198,31.211 25.198,32.819 L25.198,44.719 C25.198,46.327 23.891,47.634 22.285,47.634 L18.693,47.634 ZM22.325,32.819 C22.325,32.796 22.307,32.778 22.285,32.778 L18.693,32.778 C18.671,32.778 18.653,32.796 18.653,32.819 L18.653,44.719 C18.653,44.741 18.671,44.759 18.693,44.759 L22.285,44.759 C22.307,44.759 22.325,44.741 22.325,44.719 L22.325,32.819 ZM29.708,47.634 C28.101,47.634 26.795,46.327 26.795,44.719 L26.795,26.269 C26.795,24.662 28.102,23.354 29.708,23.354 L33.300,23.354 C34.906,23.354 36.213,24.662 36.213,26.269 L36.213,44.719 C36.213,46.327 34.906,47.634 33.300,47.634 L29.708,47.634 ZM33.340,26.269 C33.340,26.247 33.322,26.229 33.300,26.229 L29.708,26.229 C29.686,26.229 29.668,26.247 29.668,26.269 L29.668,44.719 C29.668,44.741 29.686,44.759 29.708,44.759 L33.300,44.759 C33.322,44.759 33.340,44.741 33.340,44.719 L33.340,26.269 ZM40.722,47.634 C39.116,47.634 37.809,46.327 37.809,44.719 L37.809,18.282 C37.809,16.675 39.116,15.367 40.722,15.367 L44.314,15.367 C45.921,15.367 47.227,16.675 47.227,18.282 L47.227,44.719 C47.227,46.327 45.920,47.634 44.314,47.634 L40.722,47.634 ZM44.354,18.282 C44.354,18.260 44.336,18.242 44.314,18.242 L40.722,18.242 C40.700,18.242 40.682,18.260 40.682,18.282 L40.682,44.719 C40.682,44.741 40.700,44.759 40.722,44.759 L44.314,44.759 C44.336,44.759 44.354,44.741 44.354,44.719 L44.354,18.282 ZM50.116,56.943 C44.698,60.917 38.267,63.000 31.616,63.000 C29.982,63.000 28.336,62.875 26.688,62.620 C18.328,61.332 11.000,56.903 6.053,50.151 C1.107,43.398 -0.908,35.073 0.380,26.707 C1.668,18.341 6.093,11.008 12.841,6.058 C19.589,1.108 27.909,-0.909 36.269,0.381 C44.612,1.667 51.926,6.080 56.872,12.808 L57.262,10.782 C57.412,10.003 58.165,9.492 58.944,9.643 C59.723,9.792 60.233,10.546 60.083,11.326 L59.056,16.665 C58.983,17.040 58.766,17.370 58.450,17.584 C58.211,17.746 57.930,17.830 57.645,17.830 C57.554,17.830 57.463,17.822 57.373,17.804 L52.038,16.776 C51.259,16.626 50.749,15.872 50.899,15.093 C51.049,14.313 51.803,13.803 52.581,13.953 L54.401,14.304 C49.911,8.311 43.330,4.379 35.831,3.223 C28.231,2.051 20.669,3.882 14.540,8.378 C8.411,12.873 4.391,19.538 3.220,27.144 C2.049,34.751 3.878,42.318 8.371,48.451 C12.864,54.584 19.524,58.607 27.125,59.779 C34.728,60.950 42.288,59.120 48.417,54.624 C57.406,48.031 61.777,36.709 59.553,25.781 C59.395,25.003 59.897,24.243 60.674,24.085 C61.453,23.927 62.211,24.429 62.369,25.207 C64.816,37.231 60.006,49.688 50.116,56.943 Z" />
+                </svg>
+              </div>
+              <div class="numbers__item-num">15%</div>
+              <div class="numbers__item-text">Annual growth
+                cargo transportation</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="timer" style="background-image: url(images/content/timer-bg.jpg)">
+        <div class="container">
+          <div class="timer__title title">Get a 7% discount on local moving, or 5% on long distance moving.
+            To do this, fill out the form now Get a free quote.
+            By the end of the offer remains</div>
+          <div class="clock flip-clock-wrapper" style="margin: auto;">
+            <span class="flip-clock-divider days">
+              <span class="flip-clock-label">Days</span>
+            </span>
+            <ul class="flip">
+              <li class="flip-clock-before">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">9</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">9</div>
+                  </div>
+                </a>
+              </li>
+              <li class="flip-clock-active">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="flip">
+              <li class="flip-clock-before">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                </a>
+              </li>
+              <li class="flip-clock-active">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">2</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">2</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <span class="flip-clock-divider hours">
+              <span class="flip-clock-label">Hours</span>
+            </span>
+            <ul class="flip">
+              <li class="flip-clock-before">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                </a>
+              </li>
+              <li class="flip-clock-active">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">1</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">1</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="flip">
+              <li class="flip-clock-before">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                </a>
+              </li>
+              <li class="flip-clock-active">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">3</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">3</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <span class="flip-clock-divider minutes">
+              <span class="flip-clock-label">Minutes</span>
+            </span>
+            <ul class="flip">
+              <li class="flip-clock-before">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                </a>
+              </li>
+              <li class="flip-clock-active">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">2</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">2</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="flip">
+              <li class="flip-clock-before">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                </a>
+              </li>
+              <li class="flip-clock-active">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">1</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">1</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <span class="flip-clock-divider seconds">
+              <span class="flip-clock-label">Seconds</span>
+            </span>
+            <ul class="flip play">
+              <li class="flip-clock-before">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">1</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">1</div>
+                  </div>
+                </a>
+              </li>
+              <li class="flip-clock-active">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="flip play">
+              <li class="flip-clock-before">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">9</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">9</div>
+                  </div>
+                </a>
+              </li>
+              <li class="flip-clock-active">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">8</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">8</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="message"></div>
+
+          <div class="timer__link">Get a free quote</div>
+        </div>
+      </section>
+      <section class="bonus">
+        <div class="container">
+          <div class="bonus__title title">Refer a friend get a bonus. How it works?</div>
+          <div class="bonus__text-1">NJ Local Moving
+            Gave bonus to Frank
+          </div>
+          <div class="bonus__items">
+            <div class="bonus__item">
+              <div class="bonus__text-2">Frank Used
+                NJ Local Moving</div>
+              <img src="images/content/man.jpg" alt="">
+              <span>Frank reffered
+                NJ Local Moving</span>
+            </div>
+            <div class="bonus__item">
+              <div class="bonus__text-2">Amy was looking for
+                profesional movers</div>
+              <img src="images/content/girl.jpg" alt="">
+              <span class="bonus__text-up">Amy booked
+                her job with
+                NJ Local Moving</span>
+            </div>
+            <div class="bonus__item">
+              <div class="bonus__text-2">We are always
+                happy to help</div>
+              <img src="images/content/man1.jpg" alt="">
+            </div>
+          </div>
+          <p>Somebody steered you in our direction? That's great news for you - regardless of what
+            you need to move, or whether it's personal or business. Either way, just tell us the name
+            of the kind person who wants to move and you'll get 7% cash back for a local move and
+            5% cash back for a long distance move.</p>
+        </div>
+      </section>
+      <section class="company" style="background-image: url(images/content/company-bg.jpg)">
+        <div class="container">
+          <div class="company__title title">Our company</div>
+          <div class="company__head">
+            <img src="images/content/company-img.jpg" alt="">
+            <div class="company__text">
+              <p>Lorem ipsum dolor sit amet, molestie quaerendum ex vis. Per nobis iisque id. Sit placerat atomorum
+                scribentur ea, ex nam
+                omnis minimum accusamus. Ipsum tritani eu vis, usu ad falli vitae atomorum. Ei nam convenire
+                omittantur, per rebum
+                dolorum at. Utinam eripuit sententiae his id. In diam detracto fabellas cum, mei in quas fabellas. Pri
+                partem causae cu,
+                in nam malis soluta disputationi, eirmod debitis pri te. Clita possim sit et, qui cu quod laudem
+                laoreet, usu ex unum
+                periculis. Sea no minim quaestio philosophia, vis ea discere alienum pertinax.</p>
+              <p>Quo ut nibh possim. Vis commodo debitis abhorreant ex, eum simul legimus atomorum ex. Ex ferri dolor
+                exerci vel, malis
+                graecis id vim, sea cu debet omittam. Et quis legere sit, quando nostrud periculis ut sit, cu qui
+                summo signiferumque.
+                Tale detracto cu eam, nam ea amet novum fierent. Ad pri porro saepe aperiam, ex has doming pericula
+                ullamcorper. An vix
+                offendit sapientem reprehendunt. Est ad latine ceteros conclusionemque. Sea vocent eripuit te, te
+                sensibus praesent
+                moderatius sit.</p>
+            </div>
+          </div>
+          <div class="company__bottom">
+            <img src="images/content/avatar.png" alt="">
+            <div class="company__bottom-info">
+              <div class="company__bottom-name">Dmytro Dyshkant, CEO</div>
+              <div class="company__bottom-content">
+                <p>Lorem ipsum dolor sit amet, molestie quaerendum ex vis. Per nobis iisque id. Sit placerat atomorum
+                  scribentur ea, ex nam
+                  omnis minimum accusamus. Ipsum tritani eu vis, usu ad falli vitae atomorum. Ei nam convenire
+                  omittantur, per rebum
+                  dolorum at. Utinam eripuit sententiae his id. In diam detracto fabellas cum, mei in quas fabellas. Pri
+                  partem causae cu,
+                  in nam malis soluta disputationi, eirmod debitis pri te. Clita possim sit et, qui cu quod laudem
+                  laoreet, usu ex unum
+                  periculis. Sea no minim quaestio philosophia, vis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container">
+          <div class="questions__title title">Frequently Asked Questions</div>
+          <div class="questions__list">
+            <div class="questions__item">
+              <div class="questions__box-icon">
+                <div class="questions__box-line"></div>
+                <div class="questions__box-line"></div>
+                <div class="questions__box-info">What type and size of moves does NJ local moving do? Do you do dull
+                  service moving and packing?</div>
+              </div>
+              <div class="questions__box-content">
+                We are a full service moving company. We can do any size of move either locally or across the state of
+                California. Your
+                large home, small apartment, artist or work studio, home office, retail storefront, storage unit,
+                commercial or medical
+                office – we have extensive experience with all types of moves. No job is too big or too small.
+              </div>
+            </div>
+            <div class="questions__item">
+              <div class="questions__box-icon">
+                <div class="questions__box-line"></div>
+                <div class="questions__box-line"></div>
+                <span class="questions__box-info">What type and size of moves does NJ local moving do?</span>
+              </div>
+              <div class="questions__box-content">
+                We are a full service moving company. We can do any size of move either locally or across the state of
+                California. Your
+                large home, small apartment, artist or work studio, home office, retail storefront, storage unit,
+                commercial or medical
+                office – we have extensive experience with all types of moves. No job is too big or too small.
+              </div>
+            </div>
+            <div class="questions__item">
+              <div class="questions__box-icon">
+                <div class="questions__box-line"></div>
+                <div class="questions__box-line"></div>
+                <span class="questions__box-info">What type and size of moves does NJ local moving do? Do you do dull
+                  service moving and packing?</span>
+              </div>
+              <div class="questions__box-content">
+                We are a full service moving company. We can do any size of move either locally or across the state of
+                California. Your
+                large home, small apartment, artist or work studio, home office, retail storefront, storage unit,
+                commercial or medical
+                office – we have extensive experience with all types of moves. No job is too big or too small.
+              </div>
+            </div>
+            <div class="questions__item">
+              <div class="questions__box-icon">
+                <div class="questions__box-line"></div>
+                <div class="questions__box-line"></div>
+                <span class="questions__box-info">What type and size of moves does NJ local moving do? Do you do dull
+                  service</span>
+              </div>
+              <div class="questions__box-content">
+                We are a full service moving company. We can do any size of move either locally or across the state of
+                California. Your
+                large home, small apartment, artist or work studio, home office, retail storefront, storage unit,
+                commercial or medical
+                office – we have extensive experience with all types of moves. No job is too big or too small.
+              </div>
+            </div>
+            <div class="questions__item">
+              <div class="questions__box-icon">
+                <div class="questions__box-line"></div>
+                <div class="questions__box-line"></div>
+                <span class="questions__box-info">What type and size of moves does NJ local moving do? Do you do dull
+                  service
+                  moving</span>
+              </div>
+              <div class="questions__box-content">
+                We are a full service moving company. We can do any size of move either locally or across the state of
+                California. Your
+                large home, small apartment, artist or work studio, home office, retail storefront, storage unit,
+                commercial or medical
+                office – we have extensive experience with all types of moves. No job is too big or too small.
+              </div>
+            </div>
+            <div class="questions__item">
+              <div class="questions__box-icon">
+                <div class="questions__box-line"></div>
+                <div class="questions__box-line"></div>
+                <span class="questions__box-info">What type and size of moves does NJ local</span>
+              </div>
+              <div class="questions__box-content">
+                We are a full service moving company. We can do any size of move either locally or across the state of
+                California. Your
+                large home, small apartment, artist or work studio, home office, retail storefront, storage unit,
+                commercial or medical
+                office – we have extensive experience with all types of moves. No job is too big or too small.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="your-question" style="background-image: url(images/content/your-question-bg.jpg)">
+        <div class="container">
+          <div class="your-question__wrapper">
+            <div class="your-question__content">
+              <div class="your-question__content-title content-title">You will not find the answer to your question?
+              </div>
+              <p class="your-question__content-text">Ask your question to the manager, and during the day we will call
+                you back and answer your question?</p>
+            </div>
+
+            <div class="your-question__inner">
+              <div class="your-question__form-content">
+                <form>
+                  <input class="form-name" type="text" placeholder="Full name" required>
+                  <input class="form-contact" type="tel" placeholder="Phone" required>
+                  <input class="form-contact" type="email" placeholder="Email" required>
+                  <textarea class="form-text" type="text" placeholder="Question" required></textarea>
+                  <button type="submit">ASK</button>
+                </form>
+              </div>
+            </div>
+          </div>
+      </section>
+     <section class="feedback">
+        <div class="container">
+          <div class="feedback__title title">
+            The most important indicator of the level of the company - it is the grateful feedback from our customers
+          </div>
+          <div class="feedback__slider">
+            <div class="feedback__slider-item">
+              <div class="feedback__slider-img">
+                <img src="images/content/avatar1.png" alt="">
+              </div>
+              <div class="feedback__slider-content">
+                <div class="feedback__slider-title">Brian Cobb</div>
+                <div class="feedback__slider-text">Lorem ipsum dolor sit amet, eu sea cetero contentiones, ut mei
+                  ridens mollis prodesset. Ne atqui congue eirmod nec, nec
+                  assueverit instructior te. Amet expetenda urbanitas ei sed. An vix ipsum malis ignota, ad nec
+                </div>
+              </div>
+            </div>
+            <div class="feedback__slider-item">
+              <div class="feedback__slider-img">
+                <img src="images/content/avatar2.png" alt="">
+              </div>
+              <div class="feedback__slider-content">
+                <div class="feedback__slider-title">Vincent Morgan</div>
+                <div class="feedback__slider-text">Lorem ipsum dolor sit amet, eu sea cetero contentiones, ut mei
+                  ridens mollis prodesset. Ne atqui congue eirmod nec, nec
+                  assueverit instructior te. Amet expetenda urbanitas ei sed. An vix ipsum malis ignota, ad nec
+                  suavitate deseruisse.
+                  Movet nusquam at his, fugit aeterno vix</div>
+              </div>
+            </div>
+            <div class="feedback__slider-item">
+              <div class="feedback__slider-img">
+                <img src="images/content/avatar3.png" alt="">
+              </div>
+              <div class="feedback__slider-content">
+                <div class="feedback__slider-title">Daniel Houston</div>
+                <div class="feedback__slider-text">Lorem ipsum dolor sit amet, eu sea cetero contentiones, ut mei
+                  ridens mollis prodesset. Ne atqui congue eirmod nec, nec
+                  assueverit instructior te. Amet expetenda urbanitas ei sed. An vix ipsum malis ignota, ad nec
+                  suavitate deseruisse.
+                  Movet</div>
+              </div>
+            </div>
+            <div class="feedback__slider-item">
+              <div class="feedback__slider-img">
+                <img src="images/content/avatar1.png" alt="">
+              </div>
+              <div class="feedback__slider-content">
+                <div class="feedback__slider-title">Brian Cobb</div>
+                <div class="feedback__slider-text">Lorem ipsum dolor sit amet, eu sea cetero contentiones, ut mei
+                  ridens mollis prodesset. Ne atqui congue eirmod nec, nec
+                  assueverit instructior te. Amet expetenda urbanitas ei sed. An vix ipsum malis ignota, ad nec
+                </div>
+              </div>
+            </div>
+            <div class="feedback__slider-item">
+              <div class="feedback__slider-img">
+                <img src="images/content/avatar2.png" alt="">
+              </div>
+              <div class="feedback__slider-content">
+                <div class="feedback__slider-title">Vincent Morgan</div>
+                <div class="feedback__slider-text">Lorem ipsum dolor sit amet, eu sea cetero contentiones, ut mei
+                  ridens mollis prodesset. Ne atqui congue eirmod nec, nec
+                  assueverit instructior te. Amet expetenda urbanitas ei sed. An vix ipsum malis ignota, ad nec
+                  suavitate deseruisse.
+                  Movet nusquam at his, fugit aeterno vix</div>
+              </div>
+            </div>
+            <div class="feedback__slider-item">
+              <div class="feedback__slider-img">
+                <img src="images/content/avatar3.png" alt="">
+              </div>
+              <div class="feedback__slider-content">
+                <div class="feedback__slider-title">Daniel Houston</div>
+                <div class="feedback__slider-text">Lorem ipsum dolor sit amet, eu sea cetero contentiones, ut mei
+                  ridens mollis prodesset. Ne atqui congue eirmod nec, nec
+                  assueverit instructior te. Amet expetenda urbanitas ei sed. An vix ipsum malis ignota, ad nec
+                  suavitate deseruisse.
+                  Movet</div>
+              </div>
+            </div>
+            <div class="feedback__slider-item">
+              <div class="feedback__slider-img">
+                <img src="images/content/avatar1.png" alt="">
+              </div>
+              <div class="feedback__slider-content">
+                <div class="feedback__slider-title">Brian Cobb</div>
+                <div class="feedback__slider-text">Lorem ipsum dolor sit amet, eu sea cetero contentiones, ut mei
+                  ridens mollis prodesset. Ne atqui congue eirmod nec, nec
+                  assueverit instructior te. Amet expetenda urbanitas ei sed. An vix ipsum malis ignota, ad nec
+                </div>
+              </div>
+            </div>
+            <div class="feedback__slider-item">
+              <div class="feedback__slider-img">
+                <img src="images/content/avatar2.png" alt="">
+              </div>
+              <div class="feedback__slider-content">
+                <div class="feedback__slider-title">Vincent Morgan</div>
+                <div class="feedback__slider-text">Lorem ipsum dolor sit amet, eu sea cetero contentiones, ut mei
+                  ridens mollis prodesset. Ne atqui congue eirmod nec, nec
+                  assueverit instructior te. Amet expetenda urbanitas ei sed. An vix ipsum malis ignota, ad nec
+                  suavitate deseruisse.
+                  Movet nusquam at his, fugit aeterno vix</div>
+              </div>
+            </div>
+            <div class="feedback__slider-item">
+              <div class="feedback__slider-img">
+                <img src="images/content/avatar3.png" alt="">
+              </div>
+              <div class="feedback__slider-content">
+                <div class="feedback__slider-title">Daniel Houston</div>
+                <div class="feedback__slider-text">Lorem ipsum dolor sit amet, eu sea cetero contentiones, ut mei
+                  ridens mollis prodesset. Ne atqui congue eirmod nec, nec
+                  assueverit instructior te. Amet expetenda urbanitas ei sed. An vix ipsum malis ignota, ad nec
+                  suavitate deseruisse.
+                  Movet</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="feedback__image" src="images/content/feedback-bg.png" alt="">
+      </section>
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d193440.72935876204!2d-74.32069706982423!3d40.75077564316703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25482a9871271%3A0x8c8d5a84517690fa!2zVW5pdmVyc2l0eSBIZWlnaHRzLCDQndGM0Y7QsNGA0LosINCd0YzRji3QlNC20LXRgNGB0ZYsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1593182962967!5m2!1suk!2sua"
+          frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__copy">
+            © NJ Local moving 2016
+          </div>
+          <div class="footer__icon">
+            <img src="images/icons/footer-ico.png" alt="">
+          </div>
+          <div class="footer__info">
+            Designed by WebCase
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
