@@ -48,7 +48,8 @@
     "replace": "^1.2.0",
     "sass": "^1.26.5",
     "ttf2woff": "^2.0.1",
-    "ttf2woff2": "^3.0.0"
+    "ttf2woff2": "^3.0.0",
+    "wow.js": "^1.2.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

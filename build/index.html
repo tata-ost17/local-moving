@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <link rel="stylesheet" href="css/flipclock.css">   -->
 
-  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <title>webcase</title>
 </head>
@@ -27,6 +26,11 @@
                 New Jersey
                 USA
               </div>
+              <div class="header__btn">
+                <div class="header__btn-line"></div>
+                <div class="header__btn-line"></div>
+                <div class="header__btn-line"></div>
+              </div>
               <ul class="header__link">
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Promotionf</a></li>
@@ -41,15 +45,15 @@
         <div class="header-content" style="background-image: url(images/content/header-bg.jpg)">
           <div class="container">
             <div class="header-content__inner">
-              <div class="header-content__title animate__animated animate__fadeInLeft animate__delay-1s">Moving<br>
+              <div class="header-content__title animate__animated animate__fadeInLeft animate__delay-.5s">Moving<br>
                 New Jersey</div>
-              <div class="header-content__subtitle animate__animated animate__fadeInLeft animate__delay-2s">We are
+              <div class="header-content__subtitle animate__animated animate__fadeInLeft animate__delay-1s">We are
                 professionals in their field</div>
-              <a class="header-content__btn animate__animated animate__headShake animate__delay-4s" href="#">
+              <a class="header-content__btn animate__animated animate__headShake animate__delay-2s" href="#">
                 <img src="images/icons/icon-watch.png" alt="">
                 watch videos
               </a>
-              <div class="header-content__img animate__animated animate__fadeInRight animate__delay-3s">
+              <div class="header-content__img animate__animated animate__fadeInRight animate__delay-1.5s">
                 <img src="images/content/man.png" alt="">
               </div>
             </div>
@@ -80,13 +84,11 @@
           <div class="services__wrapper">
             <div class="services__subtitle">Local moving</div>
             <div class="services__subsubtitle">Long distance moving</div>
-            <div class="services__item wow animate__animated animate__fadeInUp" data-wow-offset="100"
-              data-wow-delay=".3s">
+            <div class="services__item">
               <img class="services__img" src="images/content/packing.jpg" alt="packing">
               <div class="services__name">Packing</div>
             </div>
-            <div class="services__item wow animate__animated animate__fadeInUp" data-wow-offset="100"
-              data-wow-delay=".8s">
+            <div class="services__item">
               <img class="services__img" src="images/content/unpacking.jpg" alt="unpacking">
               <div class="services__name">Unpacking</div>
             </div>
@@ -212,10 +214,230 @@
           <div class="timer__title title">Get a 7% discount on local moving, or 5% on long distance moving.
             To do this, fill out the form now Get a free quote.
             By the end of the offer remains</div>
-          <div class="timer__clock">
-            <div class="clock"></div>
-            <div class="message"></div>
+          <div class="clock flip-clock-wrapper" style="margin: auto;">
+            <span class="flip-clock-divider days">
+              <span class="flip-clock-label">Days</span>
+            </span>
+            <ul class="flip">
+              <li class="flip-clock-before">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">9</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">9</div>
+                  </div>
+                </a>
+              </li>
+              <li class="flip-clock-active">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="flip">
+              <li class="flip-clock-before">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                </a>
+              </li>
+              <li class="flip-clock-active">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">2</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">2</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <span class="flip-clock-divider hours">
+              <span class="flip-clock-label">Hours</span>
+            </span>
+            <ul class="flip">
+              <li class="flip-clock-before">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                </a>
+              </li>
+              <li class="flip-clock-active">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">1</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">1</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="flip">
+              <li class="flip-clock-before">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                </a>
+              </li>
+              <li class="flip-clock-active">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">3</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">3</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <span class="flip-clock-divider minutes">
+              <span class="flip-clock-label">Minutes</span>
+            </span>
+            <ul class="flip">
+              <li class="flip-clock-before">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                </a>
+              </li>
+              <li class="flip-clock-active">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">2</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">2</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="flip">
+              <li class="flip-clock-before">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                </a>
+              </li>
+              <li class="flip-clock-active">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">1</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">1</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <span class="flip-clock-divider seconds">
+              <span class="flip-clock-label">Seconds</span>
+            </span>
+            <ul class="flip play">
+              <li class="flip-clock-before">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">1</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">1</div>
+                  </div>
+                </a>
+              </li>
+              <li class="flip-clock-active">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">0</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="flip play">
+              <li class="flip-clock-before">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">9</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">9</div>
+                  </div>
+                </a>
+              </li>
+              <li class="flip-clock-active">
+                <a href="#">
+                  <div class="up">
+                    <div class="shadow"></div>
+                    <div class="inn">8</div>
+                  </div>
+                  <div class="down">
+                    <div class="shadow"></div>
+                    <div class="inn">8</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
+          <div class="message"></div>
+
           <div class="timer__link">Get a free quote</div>
         </div>
       </section>
@@ -306,8 +528,8 @@
               <div class="questions__box-icon">
                 <div class="questions__box-line"></div>
                 <div class="questions__box-line"></div>
-                <span class="questions__box-info">What type and size of moves does NJ local moving do? Do you do dull
-                  service moving and packing?</span>
+                <div class="questions__box-info">What type and size of moves does NJ local moving do? Do you do dull
+                  service moving and packing?</div>
               </div>
               <div class="questions__box-content">
                 We are a full service moving company. We can do any size of move either locally or across the state of
@@ -417,7 +639,7 @@
             </div>
           </div>
       </section>
-      <section class="feedback">
+     <section class="feedback">
         <div class="container">
           <div class="feedback__title title">
             The most important indicator of the level of the company - it is the grateful feedback from our customers
@@ -562,11 +784,11 @@
         </div>
       </div>
     </footer>
-  </div>
-  <!-- <script src="js/flipclock.min.js"></script> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>

@@ -117,6 +117,7 @@ gulp.task("script", function () {
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.js",
 			"node_modules/flipclock/dist/flipclock.js",
 			"node_modules/slick-carousel/slick/slick.js",
+			"node_modules/wow.js/dist/wow.js",
 		])
 		.pipe(size())
 		.pipe(sourcemaps.init())

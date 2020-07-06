@@ -1,0 +1,541 @@
+@media (max-width: 1550px) {
+   .feedback__image {
+      left: 0px;
+   }
+}
+
+@media (max-width: 1330px) {
+   .header-content__inner {
+      padding-left: 20px;
+   }
+   .header-content__title {
+      font-size: 70px;
+      margin-bottom: 40px;
+   }
+   .header-content__subtitle {
+      font-size: 25px;
+      margin-bottom: 50px;
+   }
+   .header-content__btn {
+      font-size: 15px;
+      width: 225px;
+      height: 55px;
+   }
+   .header-content__img {
+      left: 590px;
+   }
+   .header-send__img {
+      left: 10px;
+   }
+   .header-send input {
+      margin-bottom: 10px;
+   }
+   .services__subsubtitle {
+      right: 110px;
+   }
+   .services__subtitle {
+      left: 110px;
+   }
+   .free-quote__content {
+      margin-right: 30px;
+   }
+   .bonus__item span::after {
+      left: 0;
+   }
+   .bonus__item span {
+      padding-left: 0;
+   }
+   .company__text {
+      line-height: 24px;
+   }
+   .feedback__image {
+      left: -203px;
+   }
+}
+
+@media (max-width: 1150px) {
+   .header__phone {
+      font-size: 18px;
+   }
+   .header-send__subtitle {
+      margin-bottom: 25px;
+   }
+   .header-content__img {
+      left: 515px;
+   }
+   .header-send__inner {
+      padding-top: 28px;
+   }
+   .header__text {
+      margin-right: 30px;
+   }
+   .free-quote__wrapper {
+      display: block;
+      padding: 25px;
+   }
+   .free-quote__inner,
+   .free-quote__content {
+      margin: 0 auto;
+      padding-top: 50px;
+   }
+   .numbers__item + .numbers__item {
+      margin-left: 66px;
+   }
+   .bonus__text-1::after {
+      top: 114px;
+   }
+   .bonus__items {
+      display: block;
+   }
+   .bonus__text-1::after {
+      display: none;
+   }
+   .bonus__title {
+      margin-bottom: 43px;
+   }
+   .bonus__text-1 {
+      margin-bottom: 38px;
+   }
+   .bonus {
+      padding: 95px 0 75px;
+   }
+   .company__text {
+      line-height: 22px;
+   }
+   .company__bottom {
+      padding: 14px 30px 18px;
+   }
+   .questions__box-content {
+      padding: 25px 50px 0 25px;
+   }
+   .your-question__content {
+      margin-right: 50px;
+   }
+}
+
+@media (max-width: 1050px) {
+   .header__text {
+      margin-right: auto;
+   }
+   .header__link {
+      display: none;
+      background-color: $main;
+      position: absolute;
+      top: 105px;
+      left: 0;
+      width: 100%;
+      li {
+         display: block;
+         text-align: center;
+         padding: 30px;
+         font-size: 18px;
+         border-top: 1px solid #fff;
+         & + li {
+            margin: 0;
+         }
+      }
+   }
+   .header__btn {
+      display: block;
+      padding-top: 10px;
+      width: 30px;
+      position: absolute;
+      left: 400px;
+   }
+   .header__btn-line {
+      height: 2px;
+      background-color: #fff;
+      margin-bottom: 8px;
+   }
+   .header-content__img {
+      display: none;
+   }
+   .header-content__inner {
+      margin: 0 auto;
+   }
+   .header-send input {
+      height: 40px;
+   }
+   .header-send button {
+      height: 40px;
+   }
+   .services__wrapper {
+      padding-top: 40px;
+   }
+   .services__subtitle,
+   .services__subsubtitle {
+      position: static;
+      width: 100%;
+      text-align: center;
+   }
+   .services__subsubtitle {
+      margin-bottom: 30px;
+   }
+   .numbers__item + .numbers__item {
+      margin-left: 30px;
+   }
+   .numbers__item {
+      padding: 0 30px;
+   }
+   .numbers__item-num {
+      font-size: 61px;
+   }
+   .numbers__item-text {
+      font-size: 17px;
+   }
+   .timer__title {
+      font-size: 29px;
+   }
+   .flip-clock-divider {
+      width: 40px;
+   }
+
+   .company__head {
+      display: block;
+      img {
+         height: 370px;
+         width: 485px;
+      }
+   }
+   .company__text {
+      line-height: 20px;
+      font-size: 15px;
+      padding: 0 20px 0 20px;
+   }
+   .company__bottom-name {
+      margin-bottom: 24px;
+   }
+   .company__bottom-info {
+      padding: 6px 0 0 31px;
+   }
+   .company__bottom-content {
+      font-size: 15px;
+   }
+   .questions__box-info {
+      width: 611px;
+   }
+   .your-question__wrapper {
+      display: block;
+      padding: 0 20px;
+   }
+   .your-question form {
+      width: 100%;
+      margin-top: 25px;
+   }
+   .your-question form .form-contact + .form-contact {
+      margin-left: 0px;
+   }
+   .your-question input,
+   .your-question textarea {
+      width: 100%;
+   }
+   .feedback__image {
+      display: none;
+   }
+   .feedback {
+      padding: 90px 0;
+   }
+}
+
+@media (max-width: 780px) {
+   .free-quote__form-content {
+      display: block;
+   }
+   .free-quote__form-content input {
+      width: 100%;
+   }
+   .free-quote__form-content .jq-selectbox__select,
+   .jq-selectbox {
+      width: 100%;
+   }
+   .free-quote button {
+      margin-left: 0;
+      width: 100%;
+   }
+   .numbers {
+      padding: 90px 0;
+      text-align: center;
+   }
+   .numbers__inner {
+      display: block;
+   }
+   .numbers__item-icon {
+      margin-bottom: 12px;
+   }
+   .numbers__item-num {
+      margin-bottom: 20px;
+   }
+   .numbers__item {
+      margin-bottom: 40px;
+   }
+   .numbers__line {
+      display: none;
+   }
+   .numbers__item-text {
+      padding-bottom: 10px;
+      border-bottom: 1px solid $orange;
+   }
+   .flip-clock-wrapper {
+      display: flex;
+      justify-content: center;
+      ul {
+         width: 60px;
+      }
+   }
+   .flip-clock-divider .flip-clock-label {
+      right: -88px;
+   }
+   .flip-clock-divider.minutes .flip-clock-label,
+   .flip-clock-divider.seconds .flip-clock-label {
+      right: -99px;
+   }
+   .company__bottom-content {
+      font-size: 13px;
+   }
+   .feedback__title {
+      font-size: 28px;
+      margin-bottom: 56px;
+   }
+   .numbers__item + .numbers__item {
+      margin-left: 0px;
+   }
+}
+
+@media (max-width: 720px) {
+   .header__phone {
+      display: none;
+   }
+   .header-content__title {
+      font-size: 55px;
+   }
+   .header-content__subtitle {
+      font-size: 19px;
+   }
+   .header-send__img {
+      display: none;
+   }
+   .header-send__form {
+      margin: 0 auto;
+   }
+   .timer {
+      padding: 50px 0;
+   }
+   .timer__title {
+      font-size: 26px;
+   }
+   .flip-clock-wrapper ul {
+      width: 40px;
+   }
+   .flip-clock-label {
+      font-size: 13px;
+   }
+   .flip-clock-divider .flip-clock-label {
+      right: -63px;
+   }
+   .flip-clock-divider.minutes .flip-clock-label,
+   .flip-clock-divider.seconds .flip-clock-label {
+      right: -70px;
+   }
+   .timer__link {
+      height: 52px;
+      padding: 15px;
+      margin: 57px auto 0;
+   }
+   .timer__title {
+      font-size: 21px;
+   }
+   .company__head,
+   .company__title {
+      text-align: center;
+      img {
+         margin-bottom: 20px;
+      }
+   }
+   .questions__box-info {
+      width: 491px;
+   }
+   .questions__box-content {
+      margin: 0;
+      line-height: 19px;
+      padding: 16px 50px 0 25px;
+   }
+   .questions__title {
+      text-align: center;
+      margin-bottom: 43px;
+   }
+   .footer__inner {
+      display: block;
+      text-align: center;
+   }
+   .footer__copy {
+      margin-right: 0px;
+      margin-bottom: 20px;
+   }
+   .footer__icon {
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-width: 600px) {
+   .bonus__item span {
+      top: 256px;
+      left: 152px;
+   }
+   .bonus__item span.bonus__text-up {
+      top: 276px;
+   }
+   .bonus p {
+      font-size: 19px;
+   }
+   .company__bottom {
+      display: block;
+      text-align: center;
+   }
+   .company__head img {
+      height: 320px;
+      width: 435px;
+   }
+   .company__bottom-info {
+      padding: 0;
+   }
+   .questions__box-content {
+      font-size: 12px;
+      line-height: 18px;
+      padding: 16px 50px 0 25px;
+   }
+   .questions__box-info {
+      width: 370px;
+   }
+}
+
+@media (max-width: 460px) {
+   .header__text {
+      display: none;
+   }
+   .header__btn {
+      left: 250px;
+   }
+   .header__link {
+      top: 103px;
+   }
+   .header-send__inner {
+      padding-top: 15px;
+   }
+   .header-send__subtitle {
+      margin-bottom: 10px;
+      font-size: 12px;
+   }
+   .header-send input {
+      width: 280px;
+   }
+   .services__title {
+      margin: 60px 0;
+   }
+   .services__subtitle,
+   .services__subsubtitle {
+      font-size: 20px;
+   }
+   .services__wrapper {
+      display: block;
+      padding-bottom: 30px;
+   }
+   .free-quote__content,
+   .free-quote__inner {
+      padding-top: 25px;
+   }
+   .free-quote__content-text {
+      font-size: 14px;
+      line-height: 21px;
+   }
+   .free-quote__content-title {
+      margin-bottom: 35px;
+   }
+   .flip-clock-wrapper ul {
+      width: 38px;
+   }
+   .flip-clock-wrapper ul li a div div.inn {
+      font-size: 50px;
+   }
+   .flip-clock-label {
+      font-size: 11px;
+   }
+   .flip-clock-divider .flip-clock-label {
+      right: -57px;
+   }
+   .flip-clock-divider.minutes .flip-clock-label,
+   .flip-clock-divider.seconds .flip-clock-label {
+      right: -62px;
+   }
+   .timer__link {
+      width: 100%;
+   }
+   .company__head img {
+      height: 230px;
+      width: 345px;
+   }
+   .company__text {
+      line-height: 18px;
+      font-size: 13px;
+   }
+   .questions__box-info {
+      font-size: 12px;
+      margin-left: 27px;
+      width: 256px;
+   }
+   .questions__box-content {
+      font-size: 12px;
+      line-height: 15px;
+      padding: 8px 7px 0 21px;
+   }
+   .your-question__content-text {
+      font-size: 17px;
+      line-height: 30px;
+   }
+   .feedback {
+      padding: 50px 0;
+   }
+   .feedback__title {
+      font-size: 23px;
+      margin-bottom: 48px;
+      line-height: 36px;
+   }
+   .feedback__slider-item {
+      display: block !important;
+   }
+}
+
+@media (max-width: 350px) {
+   .flip-clock-divider .flip-clock-label {
+      right: -44px;
+   }
+   .flip-clock-divider.minutes .flip-clock-label,
+   .flip-clock-divider.seconds .flip-clock-label {
+      right: -52px;
+   }
+   .flip-clock-wrapper ul li a div div.inn {
+      font-size: 43px;
+   }
+   .bonus__item span {
+      top: 256px;
+      left: 84px;
+   }
+   .bonus__item span.bonus__text-up {
+      top: 276px;
+   }
+   .company__head img {
+      display: none;
+   }
+   .your-question__content-title {
+      margin-bottom: 27px;
+   }
+   .your-question__content-text {
+      font-size: 14px;
+      line-height: 25px;
+   }
+}
+
+@media (min-width: 1051px) {
+   .header__link {
+      display: block !important;
+   }
+}
