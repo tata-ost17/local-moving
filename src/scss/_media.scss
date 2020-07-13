@@ -27,7 +27,7 @@
    .header-send__img {
       left: 10px;
    }
-   .header-send__form-input {
+   .header-send input {
       margin-bottom: 10px;
    }
    .services__subsubtitle {
@@ -57,7 +57,7 @@
    .header__phone {
       font-size: 18px;
    }
-   .header-send__form-subtitle {
+   .header-send__subtitle {
       margin-bottom: 25px;
    }
    .header-content__img {
@@ -153,7 +153,7 @@
    .header-content__inner {
       margin: 0 auto;
    }
-   .header-send__form-input {
+   .header-send input {
       height: 40px;
    }
    .header-send button {
@@ -221,7 +221,14 @@
    .your-question form {
       width: 100%;
       margin-top: 25px;
-   }   
+   }
+   .your-question form .form-contact + .form-contact {
+      margin-left: 0px;
+   }
+   .your-question input,
+   .your-question textarea {
+      width: 100%;
+   }
    .feedback__image {
       display: none;
    }
@@ -231,24 +238,19 @@
 }
 
 @media (max-width: 780px) {
-   .free-quote__form {
+   .free-quote__form-content {
       display: block;
    }
-   .free-quote__form-input {
+   .free-quote__form-content input {
       width: 100%;
    }
-   .free-quote__form .jq-selectbox__select,
+   .free-quote__form-content .jq-selectbox__select,
    .jq-selectbox {
       width: 100%;
    }
    .free-quote button {
       margin-left: 0;
       width: 100%;
-   }
-   .free-quote .container::after,
-   .free-quote .container::before{
-      width: 100%;
-      right: 0;
    }
    .numbers {
       padding: 90px 0;
@@ -272,9 +274,6 @@
    .numbers__item-text {
       padding-bottom: 10px;
       border-bottom: 1px solid $orange;
-   }
-   .numbers::before{
-      display: none;
    }
    .flip-clock-wrapper {
       display: flex;
@@ -300,11 +299,6 @@
    .numbers__item + .numbers__item {
       margin-left: 0px;
    }
-   .your-question__form-btn,
-   .your-question__form-input:nth-child(2), 
-   .your-question__form-input:nth-child(3) {
-      width: 100%;
-   }
 }
 
 @media (max-width: 720px) {
@@ -321,11 +315,7 @@
       display: none;
    }
    .header-send__form {
-      margin: 0;
-   }
-   .header-send__form-input,
-   .header-send__form-btn{
-      width: 100%;
+      margin: 0 auto;
    }
    .timer {
       padding: 50px 0;
@@ -431,10 +421,13 @@
    .header-send__inner {
       padding-top: 15px;
    }
-   .header-send__form-subtitle {
+   .header-send__subtitle {
       margin-bottom: 10px;
       font-size: 12px;
-   }   
+   }
+   .header-send input {
+      width: 280px;
+   }
    .services__title {
       margin: 60px 0;
    }
